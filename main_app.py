@@ -13,7 +13,7 @@ with st.echo(code_location='below'):
     Наша таблица с данными достаточно большая, так что вывести целиком ее не получится.
     Зато можно посмотреть на разные типы признаков: категориальные и количественные:
     """
-    df = pd.read_csv('/home/pavel/Documents/programming_staff/PycharmProjects/my_cool_project_2021/my-cool-project-2021-main/diamonds.csv')
+    df = pd.read_csv('diamonds.csv')
     df = df[(df.z < 6) & (df.z > 2) & (df.y < 10) & (df.table > 50) & (df.table < 70) & (df.depth > 55) & (df.depth < 70)]
     df.drop('Unnamed: 0', axis=1, inplace=True)
     cat = df.columns[df.dtypes == 'object']
