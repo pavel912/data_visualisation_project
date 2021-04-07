@@ -3,4 +3,4 @@ matplotlib
 streamlit
 pandas
 seaborn
-sklearn.linear_model
+scikit-learn
