@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 import time
-from sklearn.linear_model import LinearRegression
+from sklearn import linear_model
 
 
 with st.echo(code_location='below'):
@@ -103,7 +103,7 @@ with st.echo(code_location='below'):
     """
     start_stop = st.button('ТЫК')
     if start_stop:
-        model = LinearRegression()
+        model = linear_model.LinearRegression()
         fig = plt.figure(figsize=(10, 7))
         plot = st.pyplot(fig)
         if choise_hue == 'no':
