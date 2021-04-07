@@ -3,5 +3,4 @@ matplotlib
 streamlit
 pandas
 seaborn
-time
 sklearn.linear_model
